@@ -44,5 +44,8 @@ Week:
 11. Final Assignment (4 hours)
 12. IBM Digital Badge (2 minutes) 
 ### Week 1: Python Basics
-- Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
+1. Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
 
+- To type an integer: type(3). To type a real number: type(9.67). To type a string: type("Hello").
+
+- If we type float(2), it becomes 2.0; int(1,1), it becomes 1. We can also convert numbers to a string by typing str(1) or str(9.84). The result is gonna be '1' or '9.84'.
