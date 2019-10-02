@@ -43,3 +43,6 @@ Week:
 10. Model Evaluation (2 hours)
 11. Final Assignment (4 hours)
 12. IBM Digital Badge (2 minutes) 
+### Week 1: Python Basics
+- Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
+
