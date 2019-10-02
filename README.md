@@ -49,3 +49,15 @@ Week:
 - To type an integer: type(3). To type a real number: type(9.67). To type a string: type("Hello").
 
 - If we type float(2), it becomes 2.0; int(1,1), it becomes 1. We can also convert numbers to a string by typing str(1) or str(9.84). The result is gonna be '1' or '9.84'.
+
+- Boolean is also a type in Python with 2 values True or False. If we cast True for an integer 1, and false to 0, when we type int(True) we get 1, int(False) we get 0. Similarly, bool(1) --> True, and bool(0) --> False.
+
+2. Expressions and Variables: Expressions describe a type of operation the computer performs. 
+- Mathemetical operations: + adding, - subtracting, * multiplying, or / dividing (the results could be float). We can use // for integer division (ex: 25//6=4 the result is rounded).
+- Python follows Mathematical conventions (ex: 3+4/2= 5, it follows dividing first and adding later).
+
+- Variables is to store values. We can assign variables by using : or = (ex: number: 3, or number=3).
+- We can store variable of an expression (ex: x: 6+4*5. The result is 26, then x=26).
+- We can perform operations on x and save the result on a new variable (ex: x= 26, y=x/2 => y=26/2=13).
+
+3. String Operations: In Python, a string is a sequence of characters. It can be expressed in double quotes or single quotes.
