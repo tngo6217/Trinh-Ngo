@@ -60,4 +60,6 @@ Week:
 - We can store variable of an expression (ex: x: 6+4*5. The result is 26, then x=26).
 - We can perform operations on x and save the result on a new variable (ex: x= 26, y=x/2 => y=26/2=13).
 
-3. String Operations: In Python, a string is a sequence of characters. It can be expressed in double quotes or single quotes.
+3. String Operations: In Python, a string is a sequence of characters. It can be expressed in double quotes or single quotes.(ex: "hello" or 'hello').
+- It can be spaces or digits, and also be special characters (ex: "Hello! Do you know 1+1 can be 2 or 11 in Python?")
+- Slicing
