@@ -45,6 +45,7 @@ Week:
 12. IBM Digital Badge (2 minutes) 
 ### Week 1: Python Basics
 1. Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
+- https://github.com/tngo6217/Trinh-Ngo/blob/master/Screenshot%202019-10-01%20at%209.42.48%20PM.png
 
 - To type an integer: type(3). To type a real number: type(9.67). To type a string: type("Hello").
 
