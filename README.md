@@ -63,5 +63,5 @@ Week:
 3. String Operations: In Python, a string is a sequence of characters. It can be expressed in double quotes or single quotes.(ex: "hello" or 'hello').
 - It can be spaces or digits, and also be special characters (ex: "Hello! Do you know 1+1 can be 2 or 11 in Python?")
 - Slicing, stride, tuples: slicing (length of the string)
-- https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture.PNG
+- 
 
