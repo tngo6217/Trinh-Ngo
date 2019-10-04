@@ -47,7 +47,7 @@ Week:
 1. Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
 
 - To type an integer: type(3). To type a real number: type(9.67). To type a string: type("Hello").
-![Sample Image](Screenshot 2019-10-01 at 9.42.48 PM.png)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Screenshot%202019-10-01%20at%209.42.48%20PM.png)
 
 - If we type float(2), it becomes 2.0; int(1,1), it becomes 1. We can also convert numbers to a string by typing str(1) or str(9.84). The result is gonna be '1' or '9.84'.
 
