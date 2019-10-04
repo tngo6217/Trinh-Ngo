@@ -114,5 +114,61 @@ Week:
 - When we put "key1" in DICT, we receive a True if key1 is in the dictionary, False if key1 is not in there.
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture18.PNG)
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture19.PNG)
-3. Sets: 
+3. Sets: They are type of collection (means we can input different Python types like lists and tuples)
+- Sets are unordered (means sets do not record element position)
+- Sets only have unique elements (only one of a particular element in a set)
+- If we put Set1= {"pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"}, Set1: {'rock', "R&B", "disco", "hard rock", "pop", "soul"}. All the "rock" will become 1 'rock'.
+- We can put a list into a set 
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture20.PNG)
+- To add an element into a set, use \setname\.add("\new element\"). If we add an element that is already in the set, nothing would change.
+- To remove an element from a set, use \setname\.remove("\element existing in the set\").
+- To check if the item is in the set or not, use "\name of the element\" in \setname\. If receive True, that item is in the set, False means the item is not in there.
+- Like in Math, we can find a set that is the intersection of 2 sets:
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture21.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture22.PNG)
+- Also, we can fine the union of 2 sets:
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture23.PNG)
+- To check if set A is a subset of set B, use A.issubset(B). True means A is in B, False means A is not a subset of B.
+### Week 3: Python Programming Fundamentals
+1. Conditions and Branching
+- Boolean to compare values:
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture24.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture25.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture26.PNG)
+- Branching: 
+- If statement. Ex: If you're older than 18, you can enter the concert, else you can't
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture27.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture28.PNG)
+- Elif statement:
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture29.PNG)
+- Logic operators, just like in Math: not(True) is False, not(False) is True.
+- "or" condition
+  ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture30.PNG)
+- "and" condition
+  ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture31.PNG)
+ 2. Loops: There are While loops and For loops. We just apply For loops if we know how many times we're going to run the same thing.
+ - range(N) means the values will start from 0 to N-1. Ex: range(10,15) => [10,11,12,13,14].
+ - For loops: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture32.PNG)
+ ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture33.PNG)
+ - While loops: is similar to for loops but we use it when we don't know how many times we're going to run the same thing.
+ ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture34.PNG)
+3. Functions: Pyhton has many built-in functions
+- Len function takes in an input of type sequences (list, string, tuple, or dictionary) and tell us how many elements are in there.
+
+- Sum function adds the values in a list 
+
+- There are 2 ways to sort a list: sorted function and sort function 
+- Sorted just changes the list when the list is with sorted function
+
+- Sort changes the original list 
+
+- Definition function is written def and it's to help us make new functions, followed by a discpripted name of a function and its formal parameters in parentheses and followed by a colon. Code block is the indent part below that line. After we define a function, we can use it like this:
+- 
+- help (add1) helps define how that function add1 works
+
+
+
+
+
+
 
