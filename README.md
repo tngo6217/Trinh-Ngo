@@ -64,6 +64,55 @@ Week:
 3. String Operations: In Python, a string is a sequence of characters. It can be expressed in double quotes or single quotes.(ex: "hello" or 'hello').
 - It can be spaces or digits, and also be special characters (ex: "Hello! Do you know 1+1 can be 2 or 11 in Python?")
 - Slicing, stride, tuples: slicing (length of the string)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture.PNG)
+![Iamge](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture1.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/2019-10-02%20(3).png)
 - Escape Sequences: .\ are meant to proceed escape sequences (strings that are difficult to input)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/string.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/string%202.PNG)
 - String: Immutable  
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture2.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture3.PNG)
+- Method:
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture4.PNG)
+- We can also replace name in string 
+- Ex: a='Michael Jackson'
+-     b= a.replace ('Michael', 'Janet'). Then result will be b: 'Janet Jackson'.
+- The method find:
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture5.PNG)
+
+### Week 2: Python Data Structures
+
+1. List and Tuples: 
+- Tuples are an ordered sequence. They are written as comma-separated elements within parentheses. Ex: Rating=(0,1,2,3,4)
+-Different types of variable such as string, integers, or float can be contained in a tuple. Ex: tuple1= ('hello', 1, 6.56) and the type of tuple1 is tuple
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture6.PNG)
+- We can add more elements in tuple. Ex: tuple1=('hello',1,6.56). If we put tuple2= tuple1+('there', 3), the result will be tuple2= ('hello',1,6.56,'there',3)
+- Similar to string, we can do slicing on tuples. To count the elements in tuples, use len(). Tuples are also immutable.
+- We can put tuples inside of a tuple
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture7.PNG)
+
+-Lists: they are also ordered sequences and are mutable. A list is represented in square brackets. Ex: L= ['hello',1,7.5]
+- A list can contain another list, or another tuple. Ex: L= ['hey there', 1,2.5, ['yo',4],('abc',3.4)]
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture8.PNG)
+- Just like tuple, we can do slicing with list add more elements in the existing list. Notice: L.extend('pop',10]) <=> L1= L+['pop',10]. But if we put L.append(['pop',10]), the list will become L= ['hello',1, 7.5, ['pop',10]]
+- It's mutable, so we can change it like this
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture9.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture10.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture11.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture12.PNG)
+- We can clone a list. Assume A and B have the same list of ['hard rock', 1,4.76]. If we change A[0]: 'banana', A will become ['banana', 1, 4.76], but B wont't change. Cloning B from A, type B = A[:].
+2. Dictionaries: 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture13.PNG)
+- To create a dictionary we use {}, the keys have to be immutable and unique, but the values can be immutable, mutable, and duplicates.
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture14.PNG)
+- Find values through keys:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture15
+- Add and delete keys and values:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture16.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture17.PNG)
+- When we put "key1" in DICT, we receive a True if key1 is in the dictionary, False if key1 is not in there.
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture18.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture19.PNG)
+3. Sets: 
 
