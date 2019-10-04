@@ -103,11 +103,11 @@ Week:
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture12.PNG)
 - We can clone a list. Assume A and B have the same list of ['hard rock', 1,4.76]. If we change A[0]: 'banana', A will become ['banana', 1, 4.76], but B wont't change. Cloning B from A, type B = A[:].
 2. Dictionaries: 
-![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture13.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture13.PNG)
 - To create a dictionary we use {}, the keys have to be immutable and unique, but the values can be immutable, mutable, and duplicates.
 ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture14.PNG)
 - Find values through keys:
-![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture15
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture15.PNG)
 - Add and delete keys and values:
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture16.PNG)
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture17.PNG)
