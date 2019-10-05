@@ -259,8 +259,8 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture81.PNG)
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture82.PNG)
 - We can also slice data frames and assign the values to a new data frame.
-- [numbers of rows, numbers of columns]: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture83.PNG)
-- [numbers of rows, names of the columns]: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture84.PNG)
+- numbers of rows and numbers of columns: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture83.PNG)
+- numbers of rows and names of the columns: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture84.PNG)
 4. Working with and Saving Data: 
 - Pandas has the method unique to determine the unique elements in a column of a data frame
 
