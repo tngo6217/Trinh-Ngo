@@ -258,10 +258,9 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - ix method is the way to access unique elements:
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture81.PNG)
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture82.PNG)
-
 - We can also slice data frames and assign the values to a new data frame.
-- [numbers of rows, numbers of columns]: 83
-- [numbers of rows, names of the columns]: 84
+- [numbers of rows, numbers of columns]: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture83.PNG)
+- [numbers of rows, names of the columns]: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture84.PNG)
 4. Working with and Saving Data: 
 - Pandas has the method unique to determine the unique elements in a column of a data frame
 
