@@ -15,7 +15,7 @@
 ### Constraints
 
 -   I will be auditing the course for free so will be able to read and view the course content but not submit projects or earn the certification.
-
+-   I have to skip the Analyzing US Economic Data and Building a Dashboard of Course 1, Final Assignment, and IBM Digital Badge of Course 2 because I cannot access them with free audit.
 ### Assumptions
 
 -   The courses will be available for the duration of the semester.
@@ -33,16 +33,16 @@ Week:
 
 1. Python Basis (3 hours)
 2. Python Data Structures (5 hours)
-3. Python Programming Fundamental (5 hours)
-4. Working with Data in Python (4 hours)
-5. Analyzing US Economic Data and Building a Dashboard (3 hours)
-6. Importing Datasets (2 hours)
-7. Data Wrangling (2 hours)
-8. Exploratory Data Analysis (2 hours)
-9. Model Development (2 hours)
-10. Model Evaluation (2 hours)
-11. Final Assignment (4 hours)
-12. IBM Digital Badge (2 minutes) 
+3. Python Programming Fundamental (3 hours)
+4. Python Programming Fundamental (continued) (2 hours)
+5. Working with Data in Python (4 hours)
+6. Working with Data in Python (continued) (3 hours)
+7. Importing Datasets (2 hours)
+8. Data Wrangling (2 hours)
+9. Exploratory Data Analysis (2 hours)
+10. Model Development (2 hours)
+11. Model Evaluation (2 hours)
+
 ### Week 1: Python Basics
 1. Types: In Python, there are different types of data. It could be an integer (3), a real number (9.67), or word/sentence which are called string ("Hello")
 
@@ -171,6 +171,8 @@ Week:
 - In some cases, a function doesn't have a return statement, Python will return to "None" 
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture42.PNG)
 - The above example contains pass which does nothing but to satisfy the requirement of a none empty body then when we print it out, the result will be 'None'.
+
+### Week 4: Python Programming Fundamentals (continued) 
 - More things we can do with def functions:
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture43.PNG)
 - We can use loops in functions
@@ -210,8 +212,67 @@ Week:
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture61.PNG)
 ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture62.PNG)
 
-### Week 4: Working with Data in Python
+### Week 5: Working with Data in Python
 1. Reading Files with Open
+- Python can help open a file object by using: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture63.PNG)
+with open("/resources/data/Exmaple2.txt","w") is the file path, Example2.txt is the file name, /resources/data/ is the directory. The second parameter which is "w" is the mode (w means writing, r for reading, and a for appending).
+- To obtain information about the file: File1 is the file object in this case,  put fileobject.name (File1.name) to search for the name of the file, or put File1.mode to search for what kind of mode in the second parameter. We can close the file using File1.close().
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture64.PNG)
+- Using a 'with statement' to open a file is better because it will automatically close the file
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture65.PNG)
+- The method read (the second row in the above picture), stores the value of the file in the variable file_stuff as a string
+- We can output every line as element in the list by using the method readlines()
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture66.PNG)
+- The first line corresponds the first element of the list and so on.
+- The method readline() is to read the first line of the file. We can put 2 readline lines like this, 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture67.PNG)
+so the "This is line 1" or so on would appear depends on how many lines we put down.
+- We can use loop to print lines too: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture68.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture69.PNG)
+- Each time we cal the method readlines, we will progress through the text
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture70.PNG)
+2. Writing Files with Open: The order is gonna be the same as reading files with open, just change the mode from "r" to"w"
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture71.PNG)
+- To create the object file (File1), the first line in the picture shows us how to do it. Then put the content in the File1.write (can write as many as we want). Everytime the code runs, it will call each line to get the content and put it to the Example2.txt, and close the file.
+- We can write each elemant to the list, then use for loop to put those elements from the list to the file. At the end of the loop, the file will be closed: 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture72.PNG)
+- If we change the mode to "a" (means appending), we can add another content into Example2.txt by using File1.write("\content\")
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture73.PNG)
+- We can copy one file to a new file by this following:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture74.PNG)
+3. Loading Data with Pandas:
+- Pandas is the common library in Python.
+- Csv is the typical file type used to store data. 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture75.PNG)
+- Typing Pandas all the time may get tedious, so we can use the 'as statement' to shorten the name of the library. In the as statement, after the word as, we can put any letter that we want to make a shortcut, then follow this: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture76.PNG)
+- Pandas allows us to work with data on dataframe. Here is the process to go from a cvs file to a data frame:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture85.PNG)
+- The csv_path= 'file1.csv' stores the path of the csv, and it is used as an argument to the read_csv function on the second line. The result is stored to the variable df (dataframe). Now we have the data in a data frame, so we can work with it. 
+- The method head helps us examining the first five rows of a data frame. (similar in Excel)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture77.PNG)
+- A data frame is composed of rows and columns. We can create a data frame out of a dictionary. The keys correspond to the column labels, and the values or lists correspond to the rows. Then we can cast the dictionary to a data frame using the function data frame: 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture78.PNG)
+- We can create new data frame consisting of 1 or more columns by using:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture79.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture80.PNG)
+- ix method is the way to access unique elements:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture81.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture82.PNG)
+
+- We can also slice data frames and assign the values to a new data frame.
+- [numbers of rows, numbers of columns]: 83
+- [numbers of rows, names of the columns]: 84
+4. Working with and Saving Data: 
+- Pandas has the method unique to determine the unique elements in a column of a data frame
+
+
+
+
+
+
+
+
+
 
 
 
