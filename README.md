@@ -154,17 +154,66 @@ Week:
  ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture34.PNG)
 3. Functions: Pyhton has many built-in functions
 - Len function takes in an input of type sequences (list, string, tuple, or dictionary) and tell us how many elements are in there.
-
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture35.PNG)
 - Sum function adds the values in a list 
-
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture36.PNG)
 - There are 2 ways to sort a list: sorted function and sort function 
 - Sorted just changes the list when the list is with sorted function
-
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture37.PNG)
 - Sort changes the original list 
-
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture38.PNG)
 - Definition function is written def and it's to help us make new functions, followed by a discpripted name of a function and its formal parameters in parentheses and followed by a colon. Code block is the indent part below that line. After we define a function, we can use it like this:
-- 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture39.PNG)
 - help (add1) helps define how that function add1 works
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture40.PNG)
+- A function can have multiple parameters. Ex: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture41.PNG)
+- In the same case, if we put Mult(2, "Hello"), the result c will become "Hello Hello"
+- In some cases, a function doesn't have a return statement, Python will return to "None" 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture42.PNG)
+- The above example contains pass which does nothing but to satisfy the requirement of a none empty body then when we print it out, the result will be 'None'.
+- More things we can do with def functions:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture43.PNG)
+- We can use loops in functions
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture44.PNG)
+- In the example above, Stuff is album_ratings for s is the values in there. So everytime i reach to the index 0, 1, 2, Python will print out the correspongding value of that index, and it will stop until the last index printed out.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture45.PNG)
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture46.PNG)
+- The asterisk on the parameter names allows us to include all elements of the tuple ArtistNames. The values will be printed out to the according length.  
+4. Objects and Classes:
+- Every object in Python has a type, an internal data representation (a blueprint), a set of procedures for interacting with the object (methods)
+- An object is an instance of a particular type, ex: 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture47.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture48.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture49.PNG)
+- A class or type's methods are functions that every instance of that class or type provides.
+- It's how we interact with the data in a object
+- Sorting is an example of a method that interacts with the data in the object
+- Ex: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture50.PNG)
+- We can create our own type of class in Python:
+- Class is composed of Data Attributes, Methods. Imagine we're creating Class Circle and Class Rectangle:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture51.PNG)
+- Here are what we need to create that with the instances:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture52.PNG)
+![Sampke](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture53.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture54.PNG)
+- Function init is a contructor, telling Python that we're making a new class
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture55.PNG)
+- If we combine them:![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture56.PNG)
+- To change "red" to "blue", we can do C1.color="blue"
+- Methods of class: to extend radius:
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture57.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture58.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture59.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture60.PNG)
+- We can add default values for parameters, such as def_init_(self, radius=3, coloe='red'):
+- New method: 
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture61.PNG)
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture62.PNG)
+
+### Week 4: Working with Data in Python
+1. Reading Files with Open
+
+
 
 
 
