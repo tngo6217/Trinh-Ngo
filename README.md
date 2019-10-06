@@ -264,53 +264,56 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 4. Working with and Saving Data: 
 - Pandas has the method unique to determine the unique elements in a column of a data frame.
 - Ex: we would like to determine the unique year of the albums in the data set, we enter the name of the data frame, then enter the name of the column released within brackets. Tehn apply the method unique 
-86
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture86.PNG)
 - With this method, we can get the unique values of numerous elements
 - To find information of the albums released after 1979: 
-87
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture87.PNG)
 - Plug that to the variable df1, we'll get this: 
-88
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture88.PNG)
 - Save as CCV: The argument is the name of the csv file with the .csv extension. Ex: df1.to_csv('new_songs.csv')
 5. One Dimensional Numpy: Numpy is a library for scientific computing. It has many useful functions, advantages like speed and memory. It's also the basis for pandas
 - Numpy array: a Numpy array or ND array is similar to a list.
 - To creat a Numpy array:
-89
-- Then the value of a would be stored as: 90
-- If we want to check the type of the array we get: 91 
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture89.PNG)
+- Then the value of a would be stored as:![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture90.PNG)
+- If we want to check the type of the array we get: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture91.PNG) 
 - As Numpy arrays contain data of the same type, when we type a.dtype (dtype is the attribute), we'll get dtype('int64') 
 - We can use array attribute by casting a (or anything else). When we check the size, dimension, or shape (a tuple of integers indicting the size of the array in each dimension:
-92 93
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture92.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture92.PNG)
 - Indexing and Slicing:
-- We can change the value of the elements by: 94
-- Slicing like lists and tuples: 95
-- Assign new value: 96
+- We can change the value of the elements by: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture94.PNG)
+- Slicing like lists and tuples: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture95.PNG)
+- Assign new value: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture96.PNG)
 - Basic Operations: 
 - Vector addtion:
-- 97
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture97.PNG)
 - The image above shows us the difference between adding vectors in Numoy (on the lest side) and in regular way (on the right side). It's easier to code this using Numpy. 
 - Same thing for vetor subtraction, we just need to change + to -:
-- 98
-- Array multiplication with a Scalar. Using Numpy only requires one line of code: 99
-- Product of 2 numpy arrays: 100
-- Dot Product: 101
-- Adding Constant to an numpy array: 102
-- To calculate the average by using mean method (a.mean): 103
-- To find the maximum value by using the max method (b.max): 104
-- To create a function and make it calculate like in math: 105
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture98.PNG)
+- Array multiplication with a Scalar. Using Numpy only requires one line of code: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture99.PNG)
+- Product of 2 numpy arrays: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture100.PNG)
+- Dot Product: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture101.PNG)
+- Adding Constant to an numpy array: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture102.PNG)
+- To calculate the average by using mean method (a.mean): ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture103.PNG)
+- To find the maximum value by using the max method (b.max): ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture104.PNG)
+- To create a function and make it calculate like in math: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture105.PNG)
 - linspace is a useful fuction for plotting: 
-- 106. We can see the spaces between the numbers are 1
-- 107. We can see the spaces between them is 0.5
-- Plotting mathematical functions: 108
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture106.PNG). We can see the spaces between the numbers are 1
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture107.PNG). We can see the spaces between them is 0.5
+- Plotting mathematical functions: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture108.PNG)
 ### Week 6: Working with Data in Python (continued):
 6. Two Dimensional Numpy (2D array):
-- 109
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture109.PNG)
 - We use the attribute ndim to obtain the number of axes or dimensions referred to as the rank. In this case, the result is A.ndim: (2 dimensions)
-- 110
-- To access the element: 111
--  Slicing: 112
-- Add matrix: 113
-- Multiply matrix: 114 115
-- Dot product: 116 117
+- ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture110.PNG)
+- To access the element: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture111.PNG)
+-  Slicing: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture112.PNG)
+- Add matrix: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture113.PNG)
+- Multiply matrix: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture114.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture115.PNG)
+- Dot product: ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture116.PNG)
+![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture117.PNG)
 7. Simple APIs (part 1): Cannot access this video for free 
 8. SImple APIs (part 2): Cannot access this either. Too bad, so sad.
 
