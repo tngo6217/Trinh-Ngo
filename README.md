@@ -316,6 +316,51 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 ![Image](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture117.PNG)
 7. Simple APIs (part 1): Cannot access this video for free 
 8. SImple APIs (part 2): Cannot access this either. Too bad, so sad.
+### Week 7: Importing Datasets
+1. The problem: Before we begin talking about the problem, used car prices, we should first understand the importance of data analysis. Data is clloected everywhere around us, whether it's collected manually by scientists or collected digitally everytime we click on a website, or our mobile device.
+- Data analysis/data science helps us answer questions from data. Data analysis plays an important role in: discovering useful information, answering questions, predicting future or the unknown.
+- Our setting is in the following image: 
+-118
+- If we think like scientists, the attributions to determine the price of Tom's car is: 119.
+2. Understanding the Data: 
+- The dataset used in this course is an open dataset by Jeffrey C. Schlemmer, and it's in CSV format, which separates each of the values with commas, making it very easy to import in most tools or applications. Each line represents a row in the dataset.
+- 120
+- Sometimes the first row is a header, which contains a column name for each of the 26 columns, but in this example, it's just another row of data.
+- 121
+- The picture above is the documentation on what each of the 26 columns represent.
+- The first attribute "symboling" corresponds to the insurance risk level of a car. So on a scale from -3 to 3, a plus 3 indicates that the auto is risky, and a minus 3 is probably safe.
+- The second attribute "normalized-losses" is the relative average loss payment per insured vehicle year. This value is normallized for all autos within a particular size classification like 2 door small, station wagon, sport specialty, etc., and represets the average loss per car per year. 
+- After we understand the meaning of each feature, we'll notice that the 26 attribute is price. This is our target value. this means price is the value that we want to predict from the dataset and the predictors should be all the other variables listed like "symboling".
+3. Python Packages for Data Science: 
+- To do data analysis in Python, we should first know a little bit about the main packages relevant to analysis in Python. 
+- A Python library is a collection of functions and methods that allow you to perform lots of actions without writing any code. It contains bulit in modules providing different functionalities which you can use directly. There are extensive libraries offering a braod range of facilities. We have divided the Python data analysis libraries into 3 groups: scientific computing libraries, visualization libraries, and algorithmic libraries.
+- 122
+- 123
+- 124
+4. Importing and Exporting Data in Python: 
+- Data acquisition is a process of loading and reading data into Python from various resources. 
+- To read any data using Python's pandas package, there are 2 important factors to consider: format and file path. Format is the way data is encoded. We can tell different encoding schemes by looking at the ending of the file name. Some common encodings are: .csv, .json, .xlsx, .hdf...
+- The path tells us where tha data is stored (could be on computer or online). 125
+- In Pandas, the read.csv method can read in files with columns separated by commas into a pandas data frame. Reading data in pandas is quick: import pandas, then define a variable with a file path, then use read.csv method to import the data (read.csv saaumes the data contains a header, our data on used cars has no comun headers, so we need to specify read.csv to not assign headers by setting header to None)
+126
+- Printing the dataframe in Python: 127
+- Since we set up header to none, so it came out with integers like in the picture
+- If we want to add headers: 128 then it will become 129.
+- To export the pandas dataframe to a new .csv file: 130.
+- There are different formats in Python to import and export data using pandas, 131.
+5. Getting Started Analyzing Data in Python: 
+- Basis insights from the data: understand your data before beginning any analysis. Pandas has many built-in methods that can be used to understand the datatype or features or to look at the distribution of data within the dataset. Then it would help locating potential issues with the data.
+- This table shows the differences and similarities between pandas type and native python type. 132.
+- Checking data types is to locate potential info and type mismatch, and it allows an experienced data scientists to see which python functions can be applied to a specific column. 
+- 133.
+- To get the quick statistics, we use the describe method. It returns the number of terms in the column as count, average column value as mean, column standard deviation as std, the max/min values as well as the boundary of each of the quartiles. It's possible to make the describe method worked for object type columns as well. 
+- 134.
+- To enable a summary of all columns, we could add an argument (includes="all"). The outcome shows the summary of all the 26 columns, including object typed attributes. 
+- 135.
+- NaN which stands for not a number. It's bc that particular statistical metric cannot be calculated for that specific column data type.  
+- Another method to check dataset: 136.
+- This function shows the top 30 rows and bottom 30 rows of the dataframe. 
+
 
 
 
