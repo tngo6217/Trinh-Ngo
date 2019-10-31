@@ -360,8 +360,12 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - NaN which stands for not a number. It's bc that particular statistical metric cannot be calculated for that specific column data type.  
 - Another method to check dataset: 136.
 - This function shows the top 30 rows and bottom 30 rows of the dataframe. 
-
-
+### Week 8: Data Wrangling:
+1. Pre-processing Data in Python: 
+- Data pre-processing is the process of converting or mapping data from the initial "raw" form into another format, in oder to repare the data for further analysis. It's called data cleaning or data wrangling.
+- In Python, we prform operantions along columns, each row of the column represents a sample. We access a loumn by specifying the name of the column.
+- Ex: access "symboling" and "body-style" 137
+- Or we can add a value to each entry of a column
 
 
 
