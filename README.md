@@ -365,7 +365,13 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - Data pre-processing is the process of converting or mapping data from the initial "raw" form into another format, in oder to repare the data for further analysis. It's called data cleaning or data wrangling.
 - In Python, we prform operantions along columns, each row of the column represents a sample. We access a loumn by specifying the name of the column.
 - Ex: access "symboling" and "body-style" 137
-- Or we can add a value to each entry of a column
+- Or we can add a value to each entry of a column: 138
+2. Dealing with Missing Values in Python:
+- When no data value is stored for feature for a particular observation, this feature has a missing value. Missing value in data set appears as question mark and a zero or just a blank cell.
+- 139.
+- 140.
+- In some cases we may simply want to leave the missing data as missing data because it maybe useful to keep that observation even if some features are missing. 
+- To drop missing data values: 
 
 
 
