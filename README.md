@@ -371,9 +371,19 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - 139.
 - 140.
 - In some cases we may simply want to leave the missing data as missing data because it maybe useful to keep that observation even if some features are missing. 
-- To drop missing data values: 
-
-
+- To drop missing data values: .dropna is the built-in function in Pandas that helps dropping missing values. We can choose to drop rows or columns that contain missing values like NaN.
+- 141
+- To replace missing values: .replace is the built-in function in Pandas that helps replacing missing values. 
+- First we have to calculate the mean of the column, then use .replace method to specify the value we would like to be replaced as the first parameter. The second parameter is mean as the example. 
+- 142
+3. Data Formatting in Python: 
+- 143 
+- 144
+- To correct data types: 145
+4. Data Normalization in Pyhton:
+- This example shows how important it is to normalize data: 
+- 146
+- 147
 
 
 
