@@ -384,8 +384,81 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - This example shows how important it is to normalize data: 
 - 146
 - 147
-
-
+- We can apply the normalization method on the length feature by those code.
+- 148
+- 149
+- 150
+- Mean method will return the average value of the feature in the data set, and std method will return the standard deviation of the features in the data set.
+5. Binning in Python:
+- 151
+- In the actual car data set, "price" is a numerical variable ranging from 5188 to 45400, it has 201 unique values, so we can categorize them into 3 bins: low, medium, high.
+- The numpy function "linspace" is to return the array "bins" that contains 4 equally spaced numbers over the specified interval of the price. Then we create a list "group_names" that contains the different bin names. Then we use the Pandas function "cut" to segment and sort the data values into bins.
+- 152
+6. Turning categorical variables into quantitative variables in Python:
+- The fuel type feature as a categorical variable has 2 values, gas or diesel (in string format). 
+- For further analysis, we have to convert these variables into some form of numeric format 
+- 153.
+- We encode the values by adding new features correspoding to each unique element in the original feature we would like to encode. 
+- Ex: 154
+- In Pandas, we can use get_dummies() method to convert categorical variables to dummy variables.
+- 155
+- The get_dummies method automatically generates a list of numbers, each one corresponding to a particular category of the variable.
+### Week 9: Exploratory Data Analysis:
+1. Exploratory Data Analysis: 
+- 156
+- 157
+2. Descriptive Statistics:
+- Describe basic features of data, and giving short summaries about the sample and measures of the data.
+- 158
+- It shows the mean, the total number of data points, the standard deviation, the quartiles, and the extreme values. Any NaN values are automatically skipped in these statistics.
+- One way we can summarize the categorical data is by sing the function value_counts. We can change the name of the column to make it easier to read.
+- Ex: 159
+- Box plots are great way to visualize numeric data
+- 160
+- Box plots also display outliers as individual dots that occur outside the upper and lower extremes.
+- 161
+- Using box plots, we can see the distribution of different categories of the drive wheels feature oover price feature. 
+- 162 
+- 163 
+- We see that as the engine size goes up, the price of the car also goes up.
+3. GroupBy in Python:
+- 164
+- 165
+- Pick out 3 data column we're interested in. Then group the reduced data according to drive wheels and body style in the second line   
+- 166
+- 167
+4. Correlation:
+- 168
+- Correlation is not causation
+- 169
+- 170
+- 171
+5. Correlation-Statistics:
+- 172
+- 173
+- 174 
+- We can see a diagonal line with a dark red color, indicating that all the values on this diagonal are highly correlated. This correlation heatmap gives us a good overview of how the different variables are related to one another and most importtantly, how these variables are related to price. 
+6. Analysis of Variance ANOVA:
+- Statistical comparison of groups. Ex: average price of different vehicle makes.
+- 175
+- The diagram shows the average price of different vehicle makes. But we can't tell which category in the make feature has the most and which has the least impact on the car price prediction.
+- 176
+- 177
+- Look at the diagram, assume that group one is Honda and group 2 is Subaru, both are the make feature categories. Since the F-score is small, the correlation between price as the target variable and the groupings is weak.
+- 178 
+- In the second diagram, we see a case where the F-test score would be large. The variation between the averages of the 2 groups is comparable to the variations within the 2 groups. Assume that group 1 is Jaguar and group 2 is Honda. Since the F-score is large, thus the correlation is strong in this case.
+- 179
+### Week 10: Model Development:
+1. Model Development:
+- A model can be thought of as a mathematical equation used to predict a value given one or more other values. 
+- Relating one or more independent variables to dependent variables.
+- 180
+- Usually the more relevant data you have, the more accurate your model is.
+- 181
+- 182
+- 183
+2. Linear Regression and Multiple Linear Regression:
+- 
 
 
 
