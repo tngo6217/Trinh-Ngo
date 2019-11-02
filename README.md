@@ -458,9 +458,42 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - 182
 - 183
 2. Linear Regression and Multiple Linear Regression:
+- 184
+- 185
+- 186
+- 187
+- 188
+- 189
+- 190
+- 191
+- 192
+- 193
+- 194
+- 195
+3. Model Evaluation using Visualization:
+- 196
+- 197
+- The horizontal axis is the independent variable, and the vertical axis is the dependent variable. Each point represents a different target point. The fitted line represents the predicted value.
+- There are several ways to plot a regression plot. A simple way to use is regplot from the seaborn library. 
+ - 198
+ - The parameter x is he name of the column that contains th dependent variable or feature. The y parameter is the name of th column that contains the name of the depandent variable or the target. The parameter data is the name of the data frame.
+ - 199
+ - The residual plot represents the error between the actual value. Examining the predicted value and actual value we see a difference. We obtain that value by subtracting the predicted value and the actual target value. Then plolt that value on the vertical axis with the dependent variable as the horizontal axis. Repeat the process for all samples.
+- 200
+- 201
+- There is a curvature in the above image. The values of the error change with x
+- 202
+- we can use seaborn to create a residual plot. 
+- 203
+- The first parameter is a series of dependent variable or feature. The second parameter is a series of dependent variable or target. The result has the curvature.
+- A distribution plot counts the predicted value versus the actual value. We examine the vertical axis then count andplot the number of predicted points that are approximately equal to 1, then 2, then 3. In the following case, all the target values are approximately equal to 2.
+- 204
+- 205
+- Code to create distribution plots: 206
+- The actual values are used as parameter. We want the distribution instead of a histogram, so we want the hist parameters set to false. The color is red. The label is also included.
+- The predicted values are included for the second plot.
+4. Polynomial Regression and Pipelines:
 - 
-
-
 
 
 
