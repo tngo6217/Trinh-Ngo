@@ -482,51 +482,52 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture200.PNG)
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture201.PNG)
 - There is a curvature in the above image. The values of the error change with x
-- 202
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture202.PNG)
 - we can use seaborn to create a residual plot. 
-- 203
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture203.PNG)
 - The first parameter is a series of dependent variable or feature. The second parameter is a series of dependent variable or target. The result has the curvature.
 - A distribution plot counts the predicted value versus the actual value. We examine the vertical axis then count andplot the number of predicted points that are approximately equal to 1, then 2, then 3. In the following case, all the target values are approximately equal to 2.
-- 204
-- 205
-- Code to create distribution plots: 206
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture204.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture205.PNG)
+- Code to create distribution plots: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture206.PNG)
 - The actual values are used as parameter. We want the distribution instead of a histogram, so we want the hist parameters set to false. The color is red. The label is also included.
 - The predicted values are included for the second plot.
 4. Polynomial Regression and Pipelines:
-- 207
-- 208
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture207.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture208.PNG)
 - In all cases, the relationship between the variable and the parameter is always linear.
-- 209
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture209.PNG)
 - In this example, we develop a third order polynomial regression model base.
-- 210
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture210.PNG)
 - Numpy polyfit function cannot perform this type of regression. 
 - We use the preprocessing library in scikit-learn to create a polynomial feature object. The constructor takes the degree of the polynomial as a parameter. Then we transform the features into a plynomial feature with the fit underscore transform method. 
-- 211
-- 212
-- 213
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture211.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture212.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture213.PNG)
 - Import StandardScaler, then train the object. Fit the scale object then transform the data into new data frame on array x_scale
 - We can simplify our code by using a pipeline library.
-- 214 
-- 215
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture214.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture215.PNG)
 - First we import all the modules we need then we import the library pipeline.
 - We create a list of tuples. The first element in the tuple contains the name of the estimator model. The second element contains model constructor. We input the list in the pipeline constructor. Then we have a pipeline object. 
-- 216
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture216.PNG)
 - We can train the pipeline by applying the train method to the pipeline object. We can also produce a prediction. The method normalizes the data, perform a polynomial transform then out put the prediction. 
-- 217
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture217.PNG)
 5. Measures for In-Sample Evaluation:
-- 218
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture218.PNG)
 - To measure the MSE, we find the difference between the actual value y and the predicted value y^ then square it.
-- 219
-- 220
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture219.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture220.PNG)
 - To find the MSE in Python, we can import the "mean_squared_error" from "scikit-learn.metrics". The the "mean_squared_error" gets 2 input: the actual value of target variable and the predicted value of target variable. 
-- 222
-- 223
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture221.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture222.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture223.PNG)
 - For the most points, it takes values between 0 and 1.
 - Below is the case where the line provides a relatively good fit. 
-- 224
-- 225
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture224.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture225.PNG)
 - In this case, bacause the line is a good fit, the Mean squared error is small, therefore, the numerator is small. The mean squared error of the line is relatively large, as uch the numerator is large. A small number divided by a large number is an even smaller number. Take to an extreme this value tends to zero. 
-- 226
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture226.PNG)
 - if R^2 value is negative, it can be due to overfitting. 
 
 
