@@ -320,13 +320,13 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 1. The problem: Before we begin talking about the problem, used car prices, we should first understand the importance of data analysis. Data is clloected everywhere around us, whether it's collected manually by scientists or collected digitally everytime we click on a website, or our mobile device.
 - Data analysis/data science helps us answer questions from data. Data analysis plays an important role in: discovering useful information, answering questions, predicting future or the unknown.
 - Our setting is in the following image: 
--118
-- If we think like scientists, the attributions to determine the price of Tom's car is: 119.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture118.PNG)
+- If we think like scientists, the attributions to determine the price of Tom's car is: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture119.PNG).
 2. Understanding the Data: 
 - The dataset used in this course is an open dataset by Jeffrey C. Schlemmer, and it's in CSV format, which separates each of the values with commas, making it very easy to import in most tools or applications. Each line represents a row in the dataset.
-- 120
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture120.PNG)
 - Sometimes the first row is a header, which contains a column name for each of the 26 columns, but in this example, it's just another row of data.
-- 121
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture121.PNG)
 - The picture above is the documentation on what each of the 26 columns represent.
 - The first attribute "symboling" corresponds to the insurance risk level of a car. So on a scale from -3 to 3, a plus 3 indicates that the auto is risky, and a minus 3 is probably safe.
 - The second attribute "normalized-losses" is the relative average loss payment per insured vehicle year. This value is normallized for all autos within a particular size classification like 2 door small, station wagon, sport specialty, etc., and represets the average loss per car per year. 
@@ -334,153 +334,153 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 3. Python Packages for Data Science: 
 - To do data analysis in Python, we should first know a little bit about the main packages relevant to analysis in Python. 
 - A Python library is a collection of functions and methods that allow you to perform lots of actions without writing any code. It contains bulit in modules providing different functionalities which you can use directly. There are extensive libraries offering a braod range of facilities. We have divided the Python data analysis libraries into 3 groups: scientific computing libraries, visualization libraries, and algorithmic libraries.
-- 122
-- 123
-- 124
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture122.PNG) 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture123.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture124.PNG)
 4. Importing and Exporting Data in Python: 
 - Data acquisition is a process of loading and reading data into Python from various resources. 
 - To read any data using Python's pandas package, there are 2 important factors to consider: format and file path. Format is the way data is encoded. We can tell different encoding schemes by looking at the ending of the file name. Some common encodings are: .csv, .json, .xlsx, .hdf...
-- The path tells us where tha data is stored (could be on computer or online). 125
+- The path tells us where tha data is stored (could be on computer or online). ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture125.PNG)
 - In Pandas, the read.csv method can read in files with columns separated by commas into a pandas data frame. Reading data in pandas is quick: import pandas, then define a variable with a file path, then use read.csv method to import the data (read.csv saaumes the data contains a header, our data on used cars has no comun headers, so we need to specify read.csv to not assign headers by setting header to None)
-126
-- Printing the dataframe in Python: 127
+![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture126.PNG)
+- Printing the dataframe in Python: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture127.PNG)
 - Since we set up header to none, so it came out with integers like in the picture
-- If we want to add headers: 128 then it will become 129.
-- To export the pandas dataframe to a new .csv file: 130.
-- There are different formats in Python to import and export data using pandas, 131.
+- If we want to add headers: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture128.PNG) then it will become ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture129.PNG).
+- To export the pandas dataframe to a new .csv file: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture130.PNG).
+- There are different formats in Python to import and export data using pandas, ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture131.PNG).
 5. Getting Started Analyzing Data in Python: 
 - Basis insights from the data: understand your data before beginning any analysis. Pandas has many built-in methods that can be used to understand the datatype or features or to look at the distribution of data within the dataset. Then it would help locating potential issues with the data.
-- This table shows the differences and similarities between pandas type and native python type. 132.
+- This table shows the differences and similarities between pandas type and native python type. ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture132.PNG).
 - Checking data types is to locate potential info and type mismatch, and it allows an experienced data scientists to see which python functions can be applied to a specific column. 
-- 133.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture133.PNG).
 - To get the quick statistics, we use the describe method. It returns the number of terms in the column as count, average column value as mean, column standard deviation as std, the max/min values as well as the boundary of each of the quartiles. It's possible to make the describe method worked for object type columns as well. 
-- 134.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture134.PNG).
 - To enable a summary of all columns, we could add an argument (includes="all"). The outcome shows the summary of all the 26 columns, including object typed attributes. 
-- 135.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture135.PNG).
 - NaN which stands for not a number. It's bc that particular statistical metric cannot be calculated for that specific column data type.  
-- Another method to check dataset: 136.
+- Another method to check dataset: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture136.PNG).
 - This function shows the top 30 rows and bottom 30 rows of the dataframe. 
 ### Week 8: Data Wrangling:
 1. Pre-processing Data in Python: 
 - Data pre-processing is the process of converting or mapping data from the initial "raw" form into another format, in oder to repare the data for further analysis. It's called data cleaning or data wrangling.
 - In Python, we prform operantions along columns, each row of the column represents a sample. We access a loumn by specifying the name of the column.
-- Ex: access "symboling" and "body-style" 137
-- Or we can add a value to each entry of a column: 138
+- Ex: access "symboling" and "body-style" ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture137.PNG)
+- Or we can add a value to each entry of a column: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture138.PNG)
 2. Dealing with Missing Values in Python:
 - When no data value is stored for feature for a particular observation, this feature has a missing value. Missing value in data set appears as question mark and a zero or just a blank cell.
-- 139.
-- 140.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture139.PNG).
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture140.PNG).
 - In some cases we may simply want to leave the missing data as missing data because it maybe useful to keep that observation even if some features are missing. 
 - To drop missing data values: .dropna is the built-in function in Pandas that helps dropping missing values. We can choose to drop rows or columns that contain missing values like NaN.
-- 141
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture141.PNG)
 - To replace missing values: .replace is the built-in function in Pandas that helps replacing missing values. 
 - First we have to calculate the mean of the column, then use .replace method to specify the value we would like to be replaced as the first parameter. The second parameter is mean as the example. 
-- 142
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture142.PNG)
 3. Data Formatting in Python: 
-- 143 
-- 144
-- To correct data types: 145
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture143.PNG) 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture144.PNG)
+- To correct data types: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture145.PNG)
 4. Data Normalization in Pyhton:
 - This example shows how important it is to normalize data: 
-- 146
-- 147
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture146.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture147.PNG)
 - We can apply the normalization method on the length feature by those code.
-- 148
-- 149
-- 150
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture148.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture149.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture150.PNG)
 - Mean method will return the average value of the feature in the data set, and std method will return the standard deviation of the features in the data set.
 5. Binning in Python:
-- 151
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture151.PNG)
 - In the actual car data set, "price" is a numerical variable ranging from 5188 to 45400, it has 201 unique values, so we can categorize them into 3 bins: low, medium, high.
 - The numpy function "linspace" is to return the array "bins" that contains 4 equally spaced numbers over the specified interval of the price. Then we create a list "group_names" that contains the different bin names. Then we use the Pandas function "cut" to segment and sort the data values into bins.
-- 152
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture152.PNG)
 6. Turning categorical variables into quantitative variables in Python:
 - The fuel type feature as a categorical variable has 2 values, gas or diesel (in string format). 
 - For further analysis, we have to convert these variables into some form of numeric format 
-- 153.
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture153.PNG)
 - We encode the values by adding new features correspoding to each unique element in the original feature we would like to encode. 
-- Ex: 154
+- Ex: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture154.PNG)
 - In Pandas, we can use get_dummies() method to convert categorical variables to dummy variables.
-- 155
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture155.PNG)
 - The get_dummies method automatically generates a list of numbers, each one corresponding to a particular category of the variable.
 ### Week 9: Exploratory Data Analysis:
 1. Exploratory Data Analysis: 
-- 156
-- 157
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture156.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture157.PNG)
 2. Descriptive Statistics:
 - Describe basic features of data, and giving short summaries about the sample and measures of the data.
-- 158
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture158.PNG)
 - It shows the mean, the total number of data points, the standard deviation, the quartiles, and the extreme values. Any NaN values are automatically skipped in these statistics.
 - One way we can summarize the categorical data is by sing the function value_counts. We can change the name of the column to make it easier to read.
-- Ex: 159
+- Ex: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture159.PNG)
 - Box plots are great way to visualize numeric data
-- 160
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture160.PNG)
 - Box plots also display outliers as individual dots that occur outside the upper and lower extremes.
-- 161
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture161.PNG)
 - Using box plots, we can see the distribution of different categories of the drive wheels feature oover price feature. 
-- 162 
-- 163 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture162.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture163.PNG)
 - We see that as the engine size goes up, the price of the car also goes up.
 3. GroupBy in Python:
-- 164
-- 165
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture164.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture165.PNG)
 - Pick out 3 data column we're interested in. Then group the reduced data according to drive wheels and body style in the second line   
-- 166
-- 167
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture166.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture167.PNG)
 4. Correlation:
-- 168
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture168.PNG)
 - Correlation is not causation
-- 169
-- 170
-- 171
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture169.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture170.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture171.PNG)
 5. Correlation-Statistics:
-- 172
-- 173
-- 174 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture172.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture173.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture174.PNG)
 - We can see a diagonal line with a dark red color, indicating that all the values on this diagonal are highly correlated. This correlation heatmap gives us a good overview of how the different variables are related to one another and most importtantly, how these variables are related to price. 
 6. Analysis of Variance ANOVA:
 - Statistical comparison of groups. Ex: average price of different vehicle makes.
-- 175
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture175.PNG)
 - The diagram shows the average price of different vehicle makes. But we can't tell which category in the make feature has the most and which has the least impact on the car price prediction.
-- 176
-- 177
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture176.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture177.PNG)
 - Look at the diagram, assume that group one is Honda and group 2 is Subaru, both are the make feature categories. Since the F-score is small, the correlation between price as the target variable and the groupings is weak.
-- 178 
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture178.PNG)
 - In the second diagram, we see a case where the F-test score would be large. The variation between the averages of the 2 groups is comparable to the variations within the 2 groups. Assume that group 1 is Jaguar and group 2 is Honda. Since the F-score is large, thus the correlation is strong in this case.
-- 179
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture179.PNG)
 ### Week 10: Model Development:
 1. Model Development:
 - A model can be thought of as a mathematical equation used to predict a value given one or more other values. 
 - Relating one or more independent variables to dependent variables.
-- 180
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture180.PNG)
 - Usually the more relevant data you have, the more accurate your model is.
-- 181
-- 182
-- 183
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture181.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture182.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture183.PNG)
 2. Linear Regression and Multiple Linear Regression:
-- 184
-- 185
-- 186
-- 187
-- 188
-- 189
-- 190
-- 191
-- 192
-- 193
-- 194
-- 195
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture184.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture185.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture186.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture187.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture188.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture189.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture190.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture191.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture192.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture193.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture194.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture195.PNG)
 3. Model Evaluation using Visualization:
-- 196
-- 197
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture196.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture197.PNG)
 - The horizontal axis is the independent variable, and the vertical axis is the dependent variable. Each point represents a different target point. The fitted line represents the predicted value.
 - There are several ways to plot a regression plot. A simple way to use is regplot from the seaborn library. 
- - 198
+ - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture198.PNG)
  - The parameter x is he name of the column that contains th dependent variable or feature. The y parameter is the name of th column that contains the name of the depandent variable or the target. The parameter data is the name of the data frame.
- - 199
+ - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture199.PNG)
  - The residual plot represents the error between the actual value. Examining the predicted value and actual value we see a difference. We obtain that value by subtracting the predicted value and the actual target value. Then plolt that value on the vertical axis with the dependent variable as the horizontal axis. Repeat the process for all samples.
-- 200
-- 201
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture200.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture201.PNG)
 - There is a curvature in the above image. The values of the error change with x
 - 202
 - we can use seaborn to create a residual plot. 
@@ -493,9 +493,41 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - The actual values are used as parameter. We want the distribution instead of a histogram, so we want the hist parameters set to false. The color is red. The label is also included.
 - The predicted values are included for the second plot.
 4. Polynomial Regression and Pipelines:
-- 
-
-
+- 207
+- 208
+- In all cases, the relationship between the variable and the parameter is always linear.
+- 209
+- In this example, we develop a third order polynomial regression model base.
+- 210
+- Numpy polyfit function cannot perform this type of regression. 
+- We use the preprocessing library in scikit-learn to create a polynomial feature object. The constructor takes the degree of the polynomial as a parameter. Then we transform the features into a plynomial feature with the fit underscore transform method. 
+- 211
+- 212
+- 213
+- Import StandardScaler, then train the object. Fit the scale object then transform the data into new data frame on array x_scale
+- We can simplify our code by using a pipeline library.
+- 214 
+- 215
+- First we import all the modules we need then we import the library pipeline.
+- We create a list of tuples. The first element in the tuple contains the name of the estimator model. The second element contains model constructor. We input the list in the pipeline constructor. Then we have a pipeline object. 
+- 216
+- We can train the pipeline by applying the train method to the pipeline object. We can also produce a prediction. The method normalizes the data, perform a polynomial transform then out put the prediction. 
+- 217
+5. Measures for In-Sample Evaluation:
+- 218
+- To measure the MSE, we find the difference between the actual value y and the predicted value y^ then square it.
+- 219
+- 220
+- To find the MSE in Python, we can import the "mean_squared_error" from "scikit-learn.metrics". The the "mean_squared_error" gets 2 input: the actual value of target variable and the predicted value of target variable. 
+- 222
+- 223
+- For the most points, it takes values between 0 and 1.
+- Below is the case where the line provides a relatively good fit. 
+- 224
+- 225
+- In this case, bacause the line is a good fit, the Mean squared error is small, therefore, the numerator is small. The mean squared error of the line is relatively large, as uch the numerator is large. A small number divided by a large number is an even smaller number. Take to an extreme this value tends to zero. 
+- 226
+- if R^2 value is negative, it can be due to overfitting. 
 
 
 
