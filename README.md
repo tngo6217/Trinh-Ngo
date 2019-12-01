@@ -529,9 +529,18 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - In this case, bacause the line is a good fit, the Mean squared error is small, therefore, the numerator is small. The mean squared error of the line is relatively large, as uch the numerator is large. A small number divided by a large number is an even smaller number. Take to an extreme this value tends to zero. 
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture226.PNG)
 - if R^2 value is negative, it can be due to overfitting. 
-
-
-
+### Week 11: Model Evaluation:
+- 227
+- This data is used to approximate how the model performs in the real world.
+- Separating data into training and testing sets is an important part of model evaluation.
+- When we split a dataset, the larger portion of data is used for training, and a smaller part is used for testing. 
+- Use training set to buil a model and discover predictive relationships, and use the testing set to evaluate model performance
+- 228
+- 229
+- The output is an array. 
+- 230
+- 231
+- This figure shows the distribution of the actual values in 
 
 
 
