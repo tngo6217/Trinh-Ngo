@@ -530,6 +530,7 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture226.PNG)
 - if R^2 value is negative, it can be due to overfitting. 
 ### Week 11: Model Evaluation:
+1. Model Evaluation and Refinement:
 - 227
 - This data is used to approximate how the model performs in the real world.
 - Separating data into training and testing sets is an important part of model evaluation.
@@ -540,7 +541,28 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - The output is an array. 
 - 230
 - 231
-- This figure shows the distribution of the actual values in 
+- This figure shows the distribution of the actual values in red compared to the predicted values from a linear regression in blue. We see the distribution are somewhat similar. If we generate the same plot using the test data, we see the distributions are relatively different.
+- Using a lot of data for training gives us an accurate means of determining how well our model will perform in the real world. But the precision of the performance will be low.
+- 232
+- The center of this bull's eye represents the correct generalization error. If we take a random sample of the data using 90% of the data for training and 10% for testing, the first time we experiment, we get a good estimate of the training data.
+- If we use fewer data points to train the model and more to test the model, the accuracy of the generalization performance will be less but the model will have good precision.
+- 233
+- 234
+- The evaluation metric depends on the model.
+- 235
+- x_data: the predictive variable data, y_data: the target variable data, cv: is to manage the number of partitions. For example: cv=3 means the data set is split into 3 equal partitions.
+- 236
+2. Overfiting, Underfitting and Model Selection:
+- The goal of Model Selection is to determine the order of the polynomial to provide the best estimate of the function y(x)
+- 237
+- 238
+- Underfitting is where the model is too simple to fit the data.
+- Increasing it to a 16th order polynomial, the model does ext5remely well at tracking the training point but preforms poorly at estimating the function. This is espexially apparent where there is little training data. The estamated function oscillates not tracking the function. This is called overfitting.
+- 239
+- 240
+- The training error decreases with the order of the polynomial. The test error is a better means of estimating the error of a polynomial. The order decreases until the best order of the polynomial is determined then the error begins to increase. In the picturre above, anything on the left would be underfitting, and anything on the right is overfitting. 
+- 241
+- Noise is the term for the error
 
 
 
