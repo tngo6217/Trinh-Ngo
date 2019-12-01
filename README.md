@@ -562,7 +562,28 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - 240
 - The training error decreases with the order of the polynomial. The test error is a better means of estimating the error of a polynomial. The order decreases until the best order of the polynomial is determined then the error begins to increase. In the picturre above, anything on the left would be underfitting, and anything on the right is overfitting. 
 - 241
-- Noise is the term for the error
-
+- Noise is the term for the error.
+- We can calculate different R-squared values as follows: 242
+- Create an empty list to store the values, then create a list containing different polynomial orders. Then we iterate through the list using the loop.
+- We create a polynomial feature object with the order of the polynomial as a parameter then transform the training and test data into a polynomial using the fit transform method. We fit the regression model using the transform data. Then calculate the R-squared using the test data and store it in the array.
+3. Ridge Regression:
+- Ridge regression controls the magnitude of these polynomial coefficients by introducing the parameter alpha.
+- 243
+- The table represents the polynomial coefficients for different values of alpha. The column corresponds to the different polunomial coefficients, and the rows correspond to the different values of alpha. As alpha increases the parameters get smaller.
+- This is most evident for the higher order polynomial features. If alpha is too large, the coefficients will approach zero and underfit the data.
+- 244
+- 245
+- 246
+- 247
+- 248
+- 249
+- The parameter alpha is one of the arguments of the constructor.
+4. Grid Search:
+- Grid search allows us to scan through multiple free parameters with few lines of code.
+- 250
+- Grid search takes the model or objects you would like to train and different values of the hyperparameters. It then calculates the mean square error or R-squared for various hyperparameter values, allowing us to choose the best values. 
+- We start off with one value for hyperparameters and train the model. We use different hyperparameters to train the model.
+- Each model produces an error.We select the hyperparameter that minimizes the error.
+- To select 
 
 
