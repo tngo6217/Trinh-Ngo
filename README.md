@@ -555,7 +555,7 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 2. Overfiting, Underfitting and Model Selection:
 - The goal of Model Selection is to determine the order of the polynomial to provide the best estimate of the function y(x)
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture237.PNG)
-- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture238.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture238.png)
 - Underfitting is where the model is too simple to fit the data.
 - Increasing it to a 16th order polynomial, the model does ext5remely well at tracking the training point but preforms poorly at estimating the function. This is espexially apparent where there is little training data. The estamated function oscillates not tracking the function. This is called overfitting.
 - ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture239.PNG)
