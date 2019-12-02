@@ -584,6 +584,26 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - Grid search takes the model or objects you would like to train and different values of the hyperparameters. It then calculates the mean square error or R-squared for various hyperparameter values, allowing us to choose the best values. 
 - We start off with one value for hyperparameters and train the model. We use different hyperparameters to train the model.
 - Each model produces an error.We select the hyperparameter that minimizes the error.
-- To select 
+- To select the hyperparameter, we slpit our dataset into 3 parts: the training set, validation set, and test set.
+- We train the model for different hyperparameters.
+- 251
+- We use the R-squared or mean square error for each model. We select the hyperparameter that minimizes the mean squared error or maximizes the R-squared on the validation set
+- 252
+- We finally test our model performance using the test data
+- 253
+- The value of the Grid Research is a Python list that contains a Python dictionary.
+The key is the name of the free parameter. 254
+- The value of the dictionary is the different values of the free parameter. 255
+- The Grid Search takes on the scoring method, number of folds, model or object Ridge(), and the free prameter values. Some of the outputs include the different scores for different free parameter values. In this case, the R-squared along with a free parameter values that have the best score, which is 0.74 for alpha 1.
+- 256
+- 257
+- For example, ridge regression has the option to normalize the data. The term alpha is the first element in the dictionary. The second element is the normalized option
+- 258
+- 259
+- 260
+- 261
+
+
+
 
 
