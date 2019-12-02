@@ -531,77 +531,77 @@ so the "This is line 1" or so on would appear depends on how many lines we put d
 - if R^2 value is negative, it can be due to overfitting. 
 ### Week 11: Model Evaluation:
 1. Model Evaluation and Refinement:
-- 227
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture227.PNG)
 - This data is used to approximate how the model performs in the real world.
 - Separating data into training and testing sets is an important part of model evaluation.
 - When we split a dataset, the larger portion of data is used for training, and a smaller part is used for testing. 
 - Use training set to buil a model and discover predictive relationships, and use the testing set to evaluate model performance
-- 228
-- 229
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture228.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture229.PNG)
 - The output is an array. 
-- 230
-- 231
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture230.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture231.PNG)
 - This figure shows the distribution of the actual values in red compared to the predicted values from a linear regression in blue. We see the distribution are somewhat similar. If we generate the same plot using the test data, we see the distributions are relatively different.
 - Using a lot of data for training gives us an accurate means of determining how well our model will perform in the real world. But the precision of the performance will be low.
-- 232
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture232.PNG)
 - The center of this bull's eye represents the correct generalization error. If we take a random sample of the data using 90% of the data for training and 10% for testing, the first time we experiment, we get a good estimate of the training data.
 - If we use fewer data points to train the model and more to test the model, the accuracy of the generalization performance will be less but the model will have good precision.
-- 233
-- 234
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture233.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture234.PNG)
 - The evaluation metric depends on the model.
-- 235
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture235.PNG)
 - x_data: the predictive variable data, y_data: the target variable data, cv: is to manage the number of partitions. For example: cv=3 means the data set is split into 3 equal partitions.
-- 236
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture236.PNG)
 2. Overfiting, Underfitting and Model Selection:
 - The goal of Model Selection is to determine the order of the polynomial to provide the best estimate of the function y(x)
-- 237
-- 238
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture237.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture238.PNG)
 - Underfitting is where the model is too simple to fit the data.
 - Increasing it to a 16th order polynomial, the model does ext5remely well at tracking the training point but preforms poorly at estimating the function. This is espexially apparent where there is little training data. The estamated function oscillates not tracking the function. This is called overfitting.
-- 239
-- 240
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture239.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture240.PNG)
 - The training error decreases with the order of the polynomial. The test error is a better means of estimating the error of a polynomial. The order decreases until the best order of the polynomial is determined then the error begins to increase. In the picturre above, anything on the left would be underfitting, and anything on the right is overfitting. 
-- 241
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture241.PNG)
 - Noise is the term for the error.
-- We can calculate different R-squared values as follows: 242
+- We can calculate different R-squared values as follows: ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture242.PNG)
 - Create an empty list to store the values, then create a list containing different polynomial orders. Then we iterate through the list using the loop.
 - We create a polynomial feature object with the order of the polynomial as a parameter then transform the training and test data into a polynomial using the fit transform method. We fit the regression model using the transform data. Then calculate the R-squared using the test data and store it in the array.
 3. Ridge Regression:
 - Ridge regression controls the magnitude of these polynomial coefficients by introducing the parameter alpha.
-- 243
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture243.PNG)
 - The table represents the polynomial coefficients for different values of alpha. The column corresponds to the different polunomial coefficients, and the rows correspond to the different values of alpha. As alpha increases the parameters get smaller.
 - This is most evident for the higher order polynomial features. If alpha is too large, the coefficients will approach zero and underfit the data.
-- 244
-- 245
-- 246
-- 247
-- 248
-- 249
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture244.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture245.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture246.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture247.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture248.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture249.PNG)
 - The parameter alpha is one of the arguments of the constructor.
 4. Grid Search:
 - Grid search allows us to scan through multiple free parameters with few lines of code.
-- 250
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture250.PNG)
 - Grid search takes the model or objects you would like to train and different values of the hyperparameters. It then calculates the mean square error or R-squared for various hyperparameter values, allowing us to choose the best values. 
 - We start off with one value for hyperparameters and train the model. We use different hyperparameters to train the model.
 - Each model produces an error.We select the hyperparameter that minimizes the error.
 - To select the hyperparameter, we slpit our dataset into 3 parts: the training set, validation set, and test set.
 - We train the model for different hyperparameters.
-- 251
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture251.PNG)
 - We use the R-squared or mean square error for each model. We select the hyperparameter that minimizes the mean squared error or maximizes the R-squared on the validation set
-- 252
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture252.PNG)
 - We finally test our model performance using the test data
-- 253
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture253.PNG)
 - The value of the Grid Research is a Python list that contains a Python dictionary.
-The key is the name of the free parameter. 254
-- The value of the dictionary is the different values of the free parameter. 255
+The key is the name of the free parameter. ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture254.PNG)
+- The value of the dictionary is the different values of the free parameter. ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture255.PNG)
 - The Grid Search takes on the scoring method, number of folds, model or object Ridge(), and the free prameter values. Some of the outputs include the different scores for different free parameter values. In this case, the R-squared along with a free parameter values that have the best score, which is 0.74 for alpha 1.
-- 256
-- 257
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture256.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture257.PNG)
 - For example, ridge regression has the option to normalize the data. The term alpha is the first element in the dictionary. The second element is the normalized option
-- 258
-- 259
-- 260
-- 261
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture258.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture259.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture260.PNG)
+- ![Sample](https://github.com/tngo6217/Trinh-Ngo/blob/master/Capture261.PNG)
 
 
 
